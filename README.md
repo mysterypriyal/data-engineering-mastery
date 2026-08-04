@@ -2,8 +2,6 @@
 
 **From T-SQL Expert to Modern Data Stack Master**
 
-8-month transformation learning journey covering 12 modern data technologies.
-
 ---
 
 ## 🎯 Mission
