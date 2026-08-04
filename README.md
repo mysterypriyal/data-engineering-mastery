@@ -31,13 +31,3 @@ Transform from T-SQL specialist to modern data engineering expert, mastering pro
 
 ## 📊 Portfolio Projects
 (Projects will be added as they're completed)
-
-## 🚀 Current Status
-**Week 1:** Foundations - Setting up repository structure and starting Fabric + Python learning
-## 📁 Folder Structure
-data-engineering-mastery/
-├── week1-project/ # Week 1 capstone projects
-├── notes/ # Learning notes and documentation
-├── python_basics/ # Python fundamentals
-├── fabric_labs/ # Fabric hands-on labs
-└── README.md # This file
