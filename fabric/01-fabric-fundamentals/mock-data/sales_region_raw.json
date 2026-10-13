@@ -1,0 +1,162 @@
+[
+  {
+    "SalesID": 1001,
+    "Date": "2026/07/01",
+    "Region": "West",
+    "Amount": 120.5,
+    "ProductID": "P-100",
+    "LoadTimestamp": "2026-07-01T09:15:00"
+  },
+  {
+    "SalesID": 1002,
+    "Date": "2026/07/02",
+    "Region": "East",
+    "Amount": 75.0,
+    "ProductID": "P-101",
+    "LoadTimestamp": "2026-07-02T10:05:00"
+  },
+  {
+    "SalesID": 1002,
+    "Date": "2026/07/02",
+    "Region": "East",
+    "Amount": 82.5,
+    "ProductID": "P-101",
+    "LoadTimestamp": "2026-07-03T14:40:00"
+  },
+  {
+    "SalesID": 1003,
+    "Date": "07-03-2026",
+    "Region": "south",
+    "Amount": 45.25,
+    "ProductID": "P-102",
+    "LoadTimestamp": "2026-07-03T08:20:00"
+  },
+  {
+    "SalesID": 1004,
+    "Date": "2026/07/04",
+    "Region": "West",
+    "Amount": 200.0,
+    "ProductID": "P-100",
+    "LoadTimestamp": "2026-07-04T11:00:00"
+  },
+  {
+    "SalesID": 1005,
+    "Date": "2026/07/05",
+    "Region": "East",
+    "Amount": 99.99,
+    "ProductID": "P-103",
+    "LoadTimestamp": "2026-07-05T13:30:00"
+  },
+  {
+    "SalesID": 1005,
+    "Date": "2026/07/05",
+    "Region": "East",
+    "Amount": 99.99,
+    "ProductID": "P-103",
+    "LoadTimestamp": "2026-07-05T13:30:00"
+  },
+  {
+    "SalesID": 1006,
+    "Date": "07-06-2026",
+    "Region": "west",
+    "Amount": 150.75,
+    "ProductID": "P-104",
+    "LoadTimestamp": "2026-07-06T09:45:00"
+  },
+  {
+    "SalesID": 1007,
+    "Date": "2026/07/07",
+    "Region": "East",
+    "Amount": 24.99,
+    "ProductID": "P-101",
+    "LoadTimestamp": "2026-07-07T10:10:00"
+  },
+  {
+    "SalesID": 1008,
+    "Date": "07-08-2026",
+    "Region": "South",
+    "Amount": "24.99",
+    "ProductID": "P-102",
+    "LoadTimestamp": "2026-07-08T12:00:00"
+  },
+  {
+    "SalesID": 1009,
+    "Date": "2026/07/09",
+    "Region": "West",
+    "Amount": 310.4,
+    "ProductID": "P-100",
+    "LoadTimestamp": "2026-07-09T08:55:00"
+  },
+  {
+    "SalesID": 1010,
+    "Date": "07-10-2026",
+    "Region": "East",
+    "Amount": 58.6,
+    "ProductID": "P-103",
+    "LoadTimestamp": "2026-07-10T15:05:00"
+  },
+  {
+    "SalesID": 1011,
+    "Date": "2026/07/11",
+    "Region": "south",
+    "Amount": 88.0,
+    "ProductID": null,
+    "LoadTimestamp": "2026-07-11T09:30:00"
+  },
+  {
+    "SalesID": 1012,
+    "Date": "07-12-2026",
+    "Region": "West",
+    "Amount": 142.1,
+    "ProductID": "P-104",
+    "LoadTimestamp": "2026-07-12T10:45:00"
+  },
+  {
+    "SalesID": 1013,
+    "Date": "2026/07/13",
+    "Region": "East",
+    "Amount": 67.35,
+    "ProductID": "P-101",
+    "LoadTimestamp": "2026-07-13T11:20:00"
+  },
+  {
+    "SalesID": 1014,
+    "Date": "2026/07/14",
+    "Region": "West",
+    "Amount": 95.0,
+    "ProductID": "P-100",
+    "LoadTimestamp": "2026-07-17T09:00:00"
+  },
+  {
+    "SalesID": 1015,
+    "Date": "07-15-2026",
+    "Region": "South",
+    "Amount": 129.99,
+    "ProductID": "P-102",
+    "LoadTimestamp": "2026-07-15T13:10:00"
+  },
+  {
+    "SalesID": 1016,
+    "Date": "2026/07/16",
+    "Region": "East",
+    "Amount": 73.45,
+    "ProductID": "P-103",
+    "LoadTimestamp": "2026-07-16T14:00:00"
+  },
+  {
+    "SalesID": 1017,
+    "Date": "07-17-2026",
+    "Region": "west",
+    "Amount": 165.2,
+    "ProductID": "P-104",
+    "LoadTimestamp": "2026-07-17T09:25:00"
+  },
+  {
+    "SalesID": 1018,
+    "Date": "2026/07/18",
+    "Region": "East",
+    "Amount": 51.1,
+    "ProductID": "P-101",
+    "LoadTimestamp": "2026-07-18T10:40:00"
+  }
+]
