@@ -1,0 +1,17 @@
+[
+  {"customer_id": "CUST-1001", "first_name": "Amara", "last_name": "Okafor", "email": "amara.okafor@contosoretail.com", "city": "Seattle", "state": "WA", "country": "USA", "signup_date": "2021-03-14", "loyalty_tier": "Gold"},
+  {"customer_id": "CUST-1002", "first_name": "Liam", "last_name": "Chen", "email": "liam.chen@contosoretail.com", "city": "Austin", "state": "TX", "country": "USA", "signup_date": "2020-11-02", "loyalty_tier": "Silver"},
+  {"customer_id": "CUST-1003", "first_name": "Priya", "last_name": "Natarajan", "email": "priya.natarajan@contosoretail.com", "city": "Chicago", "state": "IL", "country": "USA", "signup_date": "2022-06-19", "loyalty_tier": "Bronze"},
+  {"customer_id": "CUST-1004", "first_name": "Diego", "last_name": "Alvarez", "email": "diego.alvarez@contosoretail.com", "city": "Miami", "state": "FL", "country": "USA", "signup_date": "2019-08-23", "loyalty_tier": "Gold"},
+  {"customer_id": "CUST-1005", "first_name": "Sofia", "last_name": "Rossi", "email": "sofia.rossi@contosoretail.com", "city": "Denver", "state": "CO", "country": "USA", "signup_date": "2023-01-11", "loyalty_tier": "Bronze"},
+  {"customer_id": "CUST-1006", "first_name": "Kenji", "last_name": "Yamamoto", "email": "kenji.yamamoto@contosoretail.com", "city": "Portland", "state": "OR", "country": "USA", "signup_date": "2021-09-30", "loyalty_tier": "Silver"},
+  {"customer_id": "CUST-1007", "first_name": "Grace", "last_name": "Mensah", "email": "grace.mensah@contosoretail.com", "city": "Atlanta", "state": "GA", "country": "USA", "signup_date": "2022-02-27", "loyalty_tier": "Gold"},
+  {"customer_id": "CUST-1008", "first_name": "Noah", "last_name": "Fischer", "email": "noah.fischer@contosoretail.com", "city": "Boston", "state": "MA", "country": "USA", "signup_date": "2020-05-16", "loyalty_tier": "Silver"},
+  {"customer_id": "CUST-1009", "first_name": "Elena", "last_name": "Petrova", "email": "elena.petrova@contosoretail.com", "city": "Phoenix", "state": "AZ", "country": "USA", "signup_date": "2023-07-04", "loyalty_tier": "Bronze"},
+  {"customer_id": "CUST-1010", "first_name": "Marcus", "last_name": "Johnson", "email": "marcus.johnson@contosoretail.com", "city": "Dallas", "state": "TX", "country": "USA", "signup_date": "2019-12-01", "loyalty_tier": "Gold"},
+  {"customer_id": "CUST-1011", "first_name": "Hannah", "last_name": "Lindqvist", "email": "hannah.lindqvist@contosoretail.com", "city": "Minneapolis", "state": "MN", "country": "USA", "signup_date": "2022-10-08", "loyalty_tier": "Silver"},
+  {"customer_id": "CUST-1012", "first_name": "Omar", "last_name": "Haddad", "email": "omar.haddad@contosoretail.com", "city": "San Diego", "state": "CA", "country": "USA", "signup_date": "2021-04-22", "loyalty_tier": "Bronze"},
+  {"customer_id": "CUST-1013", "first_name": "Isabelle", "last_name": "Dubois", "email": "isabelle.dubois@contosoretail.com", "city": "New Orleans", "state": "LA", "country": "USA", "signup_date": "2020-02-09", "loyalty_tier": "Gold"},
+  {"customer_id": "CUST-1014", "first_name": "Tyler", "last_name": "Brooks", "email": "tyler.brooks@contosoretail.com", "city": "Salt Lake City", "state": "UT", "country": "USA", "signup_date": "2023-03-17", "loyalty_tier": "Silver"},
+  {"customer_id": "CUST-1015", "first_name": "Mei", "last_name": "Lin", "email": "mei.lin@contosoretail.com", "city": "San Jose", "state": "CA", "country": "USA", "signup_date": "2021-07-05", "loyalty_tier": "Bronze"}
+]
