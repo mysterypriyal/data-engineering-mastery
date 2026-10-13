@@ -1,0 +1,32 @@
+[
+  {
+    "ProductID": "P-100",
+    "ProductName": "Contoso Trail Backpack",
+    "Category": "Outdoor",
+    "Price": 64.99
+  },
+  {
+    "ProductID": "P-101",
+    "ProductName": "Contoso Wireless Earbuds",
+    "Category": "Electronics",
+    "Price": 89.99
+  },
+  {
+    "ProductID": "P-102",
+    "ProductName": "Contoso Yoga Mat",
+    "Category": "Fitness",
+    "Price": 29.99
+  },
+  {
+    "ProductID": "P-103",
+    "ProductName": "Contoso Ceramic Coffee Mug",
+    "Category": "Home",
+    "Price": 12.99
+  },
+  {
+    "ProductID": "P-104",
+    "ProductName": "Contoso Bluetooth Speaker",
+    "Category": "Electronics",
+    "Price": 54.99
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "CustomerID": "C-001",
+    "Name": "Alice Monroe",
+    "Region": "West",
+    "Email": "alice.monroe@contosoretail.com"
+  },
+  {
+    "CustomerID": "C-002",
+    "Name": "Brian Chu",
+    "Region": "East",
+    "Email": "brian.chu@contosoretail.com"
+  },
+  {
+    "CustomerID": "C-003",
+    "Name": "Carla Nunez",
+    "Region": "South",
+    "Email": "carla.nunez@contosoretail.com"
+  },
+  {
+    "CustomerID": "C-004",
+    "Name": "Derek Osei",
+    "Region": "West",
+    "Email": "derek.osei@contosoretail.com"
+  },
+  {
+    "CustomerID": "C-005",
+    "Name": "Elena Petrova",
+    "Region": "East",
+    "Email": "elena.petrova@contosoretail.com"
+  },
+  {
+    "CustomerID": "C-006",
+    "Name": "Farah Haddad",
+    "Region": "South",
+    "Email": "farah.haddad@contosoretail.com"
+  },
+  {
+    "CustomerID": "C-007",
+    "Name": "George Lin",
+    "Region": "West",
+    "Email": "george.lin@contosoretail.com"
+  },
+  {
+    "CustomerID": "C-008",
+    "Name": "Hana Kovac",
+    "Region": "East",
+    "Email": "hana.kovac@contosoretail.com"
+  }
+]

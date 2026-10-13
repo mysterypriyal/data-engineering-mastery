@@ -46,21 +46,54 @@ exercise, not written speculatively ahead of doing the work.
 ### Medallion architecture (bronze/silver/gold), as applied here
 - **Bronze**: raw files as received, `Files/raw/` — `sales_raw.json`,
   `customers.json`, `products.json`, uncleaned.
-- **Silver**: validated, typed, deduplicated — `Tables/silver_sales`,
-  produced by `clean_sales_data_fabric.ipynb`.
+- **Silver**: validated, typed, deduplicated — `Tables/Sales`,
+  `Tables/Products`, `Tables/Customers`, produced by
+  `clean_sales_data_fabric.ipynb`.
 - **Gold** (not yet built): curated, business-level aggregates for reporting
   — to be added once silver is in place and validated.
 
+### Cleaning notebook: what each step teaches
+1. **Read bronze JSON from `Files/raw/`** — schema inferred by
+   `spark.read.json`, no connection string needed (OneLake-relative path).
+2. **Dedup via window function** — `Window.partitionBy("SalesID")
+   .orderBy(desc("LoadTimestamp"))` + `row_number() == 1` keeps the latest
+   row per key. Same pattern fixes both an exact duplicate (`SalesID 1005`)
+   and a correction where a later row has an updated `Amount`
+   (`SalesID 1002`) — "keep latest per key" is the general rule.
+3. **Standardize dates/casing/types** — `coalesce(to_date(...), to_date(...))`
+   tries multiple date formats in order; `initcap()` fixes casing
+   inconsistency; `cast("double")` normalizes a string-typed numeric column.
+   A genuinely missing value (`ProductID`) is left `NULL` and flagged, not
+   dropped or guessed at.
+4. **Late-arriving data detection** — compare `SaleDate` (business date) to
+   `LoadTimestamp` (arrival date); a gap > 1 day flags a row that must still
+   be filed under its original business date, not the day it was loaded.
+5. **Write managed Delta tables** — `saveAsTable` lands `Sales`, `Products`,
+   `Customers` in `Tables/`, queryable immediately from the SQL endpoint,
+   Power BI Direct Lake, or another notebook.
+6. **Cross-check against the Warehouse version** — reproduces the same
+   "sales by region" aggregation as DataFrame `groupBy` that Session 1 did
+   in T-SQL, joined against the *customer's* region (not the messy
+   per-transaction `Region` field) — getting the same answer two ways
+   validates the cleaning logic.
+
 ### Exercise 1 status
-- [ ] Create the **Fabric Learning** workspace
-- [ ] Create a Lakehouse inside it
-- [ ] Upload `sales_raw.json`, `customers.json`, `products.json` to
+- [x] Lakehouse (`SalesLakehouse`) created in **My workspace**
+- [x] `sales_raw.json`, `customers.json`, `products.json` uploaded to
       `Files/raw/`
-- [ ] Attach `clean_sales_data_fabric.ipynb` to the Lakehouse and run it
-      end-to-end to produce `Tables/silver_sales`
-- [ ] Spot-check `silver_sales` via the SQL endpoint
+- [ ] Run `clean_sales_data_fabric.ipynb` end-to-end to produce
+      `Tables/Sales`, `Tables/Products`, `Tables/Customers`
+- [ ] Spot-check the tables via the SQL endpoint
+- [ ] Verify Step 6's region rollup matches the local pandas run
 
 *(checkboxes get filled in as we complete each step together)*
+
+### Gotcha we hit: generic filenames collide across exercises
+Reused a filename (`sales_raw.json`) across two unrelated schemas without
+realizing a different exercise already owned that path — the second upload
+silently overwrote the first. Lesson for later modules: treat
+`Files/raw/<name>.json` as a shared namespace per Lakehouse, not scoped to
+whichever notebook you're thinking about at the moment.
 
 ---
 
