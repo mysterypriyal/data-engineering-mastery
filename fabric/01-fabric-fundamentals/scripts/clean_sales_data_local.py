@@ -1,9 +1,11 @@
 """
 Local (pandas) prototype of the Contoso Retail sales-cleaning logic.
 
-Purpose: iterate fast on cleaning rules against claude/mock-data/sales_raw.json
-before porting the same logic to PySpark in
-claude/notebooks/clean_sales_data_fabric.ipynb, where it runs against the
+Purpose: iterate fast on cleaning rules against
+fabric/01-fabric-fundamentals/mock-data/sales_raw.json before porting the
+same logic to PySpark in
+fabric/01-fabric-fundamentals/notebooks/clean_sales_data_fabric.ipynb,
+where it runs against the
 Lakehouse bronze/silver tables over OneLake.
 
 Rules applied (bronze -> silver):
